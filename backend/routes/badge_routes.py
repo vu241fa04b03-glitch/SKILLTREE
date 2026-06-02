@@ -2,8 +2,8 @@
 
 
 from flask import Blueprint
-from controllers.badge_controller import get_all_badges, get_user_badges
-from middleware.auth_middleware import token_required, get_current_user_id
+from backend.controllers.badge_controller import get_all_badges, get_user_badges
+from backend.middleware.auth_middleware import token_required, get_current_user_id
 
 badge_bp = Blueprint('badges', __name__, url_prefix='/api/badges')
 

@@ -3,7 +3,7 @@
 from flask import request, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_jwt_extended import create_access_token
-from models import db, User, UserXP, UserSkill, UserSkillProgress, Skill
+from backend.models import db, User, UserXP, UserSkill, UserSkillProgress, Skill
 
 
 def signup():

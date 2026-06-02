@@ -2,7 +2,7 @@
 
 from flask import request, jsonify
 from datetime import datetime
-from models import db, Skill, UserSkill, UserSkillProgress, UserBadge, Badge, UserXP
+from backend.models import db, Skill, UserSkill, UserSkillProgress, UserBadge, Badge, UserXP
 import json
 
 

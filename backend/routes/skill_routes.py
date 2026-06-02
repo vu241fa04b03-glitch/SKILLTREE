@@ -1,11 +1,11 @@
 # 241fa04b03
 
 from flask import Blueprint
-from controllers.skill_controller import (
+from backend.controllers.skill_controller import (
     get_all_skills, get_skill, assign_skill,
     submit_assignment, get_user_skills
 )
-from middleware.auth_middleware import token_required, get_current_user_id
+from backend.middleware.auth_middleware import token_required, get_current_user_id
 
 skill_bp = Blueprint('skills', __name__, url_prefix='/api/skills')
 

@@ -1,8 +1,8 @@
 # 241fa04b03
 
 from flask import Blueprint
-from controllers.auth_controller import signup, login, get_profile
-from middleware.auth_middleware import token_required, get_current_user_id
+from backend.controllers.auth_controller import signup, login, get_profile
+from backend.middleware.auth_middleware import token_required, get_current_user_id
 
 auth_bp = Blueprint('auth', __name__, url_prefix='/api/auth')
 

@@ -1,7 +1,7 @@
 # 241fa04b19
 
 from flask import jsonify
-from models import Badge, UserBadge
+from backend.models import Badge, UserBadge
 
 
 def get_all_badges(user_id):

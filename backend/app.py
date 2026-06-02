@@ -5,7 +5,7 @@ from flask_jwt_extended import JWTManager
 from flask_cors import CORS
 from dotenv import load_dotenv
 from pymongo import MongoClient
-from models import db, Skill, Badge
+from backend.models import db, Skill, Badge
 import os
 import json
 
@@ -37,9 +37,9 @@ db.init_app(app)
 jwt = JWTManager(app)
 CORS(app, origins='*')
 
-from routes.auth_routes import auth_bp
-from routes.skill_routes import skill_bp
-from routes.badge_routes import badge_bp
+from backend.routes.auth_routes import auth_bp
+from backend.routes.skill_routes import skill_bp
+from backend.routes.badge_routes import badge_bp
 
 app.register_blueprint(auth_bp)
 app.register_blueprint(skill_bp)
