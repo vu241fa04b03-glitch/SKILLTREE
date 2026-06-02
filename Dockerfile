@@ -10,4 +10,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["sh", "-c", "gunicorn backend.app:app --bind 0.0.0.0:$PORT"]
+RUN chmod +x ./start.sh
+CMD ["sh", "./start.sh"]
